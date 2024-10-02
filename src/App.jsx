@@ -4,21 +4,22 @@ import { useState } from 'react'
 //import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import BootStrapButton from './BootstrapExample'
-import Header from './componets/Header'
+import Header from './components/Header'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import BoardPage from './pages/boardPage'
+import ProfilePage from './pages/ProfilePage'
 
 function App() {
-  const hello = '안녕하세요'
-
-  const style = {
-    fontSize: 30,
-  }
-
   return (
     <>
-      <Header></Header>
-      <div style={style}>{hello}</div>
-      <div>{hello}</div>
-      <BootStrapButton />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/board" element={<BoardPage />}></Route>
+          <Route path="/profile" element={<ProfilePage />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
