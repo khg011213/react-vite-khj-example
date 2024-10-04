@@ -13,6 +13,7 @@ import BoardPage from '../pages/boardPage'
 import ProfilePage from '../pages/ProfilePage'
 import PropsPage from '../pages/PropsPage'
 import ThressPage from '../pages/ThressPage'
+import CounterPage from '../pages/CounterPage'
 // Routes로 들어오면 그 경로에 맞게 결과를 보여줌
 
 const routes = [
@@ -36,6 +37,11 @@ const routes = [
     path: '/three',
     element: <ThressPage />,
     title: '조건부랜더링',
+  },
+  {
+    path: '/usestate',
+    element: <CounterPage />,
+    title: '유즈스테이트',
   },
 ]
 
