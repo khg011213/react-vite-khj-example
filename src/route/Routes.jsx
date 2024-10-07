@@ -15,6 +15,7 @@ import PropsPage from '../pages/PropsPage'
 import ThressPage from '../pages/ThressPage'
 import CounterPage from '../pages/CounterPage'
 import InputPage from '../pages/InputPage'
+import InputGradePage from '../pages/InputGradePage'
 // Routes로 들어오면 그 경로에 맞게 결과를 보여줌
 
 const routes = [
@@ -48,6 +49,11 @@ const routes = [
     path: '/input',
     element: <InputPage />,
     title: 'input 연습',
+  },
+  {
+    path: '/inputGrade',
+    element: <InputGradePage />,
+    title: '성적표',
   },
 ]
 

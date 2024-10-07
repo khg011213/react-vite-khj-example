@@ -1,11 +1,11 @@
 import React from 'react'
-import Input from '../components/input'
+import InputGrade from '../components/InputGrade'
 
 const InputPage = () => {
   //prettier-ignore
   return (
     <div className="text-center mt-5">
-      <Input />
+      <InputGrade/>
     </div>
   )
 }
