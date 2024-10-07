@@ -14,6 +14,7 @@ import ProfilePage from '../pages/ProfilePage'
 import PropsPage from '../pages/PropsPage'
 import ThressPage from '../pages/ThressPage'
 import CounterPage from '../pages/CounterPage'
+import InputPage from '../pages/InputPage'
 // Routes로 들어오면 그 경로에 맞게 결과를 보여줌
 
 const routes = [
@@ -42,6 +43,11 @@ const routes = [
     path: '/usestate',
     element: <CounterPage />,
     title: '유즈스테이트',
+  },
+  {
+    path: '/input',
+    element: <InputPage />,
+    title: 'input 연습',
   },
 ]
 
