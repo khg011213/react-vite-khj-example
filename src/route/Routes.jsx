@@ -18,6 +18,8 @@ import InputPage from '../pages/InputPage'
 import InputGradePage from '../pages/InputGradePage'
 import UseRefPage from '../pages/UseRefPage'
 import UseRefPage2 from '../pages/UseRefPage2'
+import UserArrayPage from '../pages/UserArrayPage'
+import UserCRUDPage from '../pages/UserCRUDPage'
 // Routes로 들어오면 그 경로에 맞게 결과를 보여줌
 
 const routes = [
@@ -66,6 +68,12 @@ const routes = [
     path: '/useRef2',
     element: <UseRefPage2 />,
     title: 'useRef 예제 2번',
+  },
+  {
+    path: '/userpage',
+    //element: <UserArrayPage />,
+    element: <UserCRUDPage />,
+    title: 'userpage',
   },
 ]
 
