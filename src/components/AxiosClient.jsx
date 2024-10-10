@@ -1,8 +1,12 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 // https://jsonplaceholder.typicode.com/posts
 const AxiosClient = () => {
   const [data, setData] = useState([])
+  //처음 랜더링 될때 한번만 실행 시키고 싶다.
+  useEffect(() => {
+    getClick()
+  }, [])
   const getClick = () => {
     axios
       .get('https://sample.bmaster.kro.kr/contacts?pageno=3&pagesize=10')

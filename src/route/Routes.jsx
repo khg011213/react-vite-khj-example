@@ -22,6 +22,7 @@ import UserArrayPage from '../pages/UserArrayPage'
 import UserCRUDPage from '../pages/UserCRUDPage'
 import AxiosPage from '../pages/AxiosPage'
 import AxiosClientPage from '../pages/AxiosClientPage'
+import UseEffectPage from '../pages/UseEffectPage'
 // Routes로 들어오면 그 경로에 맞게 결과를 보여줌
 
 const routes = [
@@ -86,6 +87,11 @@ const routes = [
     path: '/axiosClient',
     element: <AxiosClientPage />,
     title: 'axiosClient',
+  },
+  {
+    path: '/useEffect',
+    element: <UseEffectPage />,
+    title: 'useEffect',
   },
 ]
 
