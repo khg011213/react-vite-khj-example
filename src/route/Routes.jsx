@@ -20,6 +20,8 @@ import UseRefPage from '../pages/UseRefPage'
 import UseRefPage2 from '../pages/UseRefPage2'
 import UserArrayPage from '../pages/UserArrayPage'
 import UserCRUDPage from '../pages/UserCRUDPage'
+import AxiosPage from '../pages/AxiosPage'
+import AxiosClientPage from '../pages/AxiosClientPage'
 // Routes로 들어오면 그 경로에 맞게 결과를 보여줌
 
 const routes = [
@@ -74,6 +76,16 @@ const routes = [
     //element: <UserArrayPage />,
     element: <UserCRUDPage />,
     title: 'userpage',
+  },
+  {
+    path: '/axiosget',
+    element: <AxiosPage />,
+    title: 'axiosget',
+  },
+  {
+    path: '/axiosClient',
+    element: <AxiosClientPage />,
+    title: 'axiosClient',
   },
 ]
 
